@@ -20,7 +20,7 @@
        {% for venda in vendas %}
       <tr>
         <td>{{venda["mes"]}}</td>
-        <td>R$ {{venda["total"]}} locale.currency(valor, grouping=True, symbol=True)</td>
+        <td>{{locale.currency(venda["total"], grouping=True, symbol=True)}}</td>
       </tr>
        {% endfor %}
     </tbody>

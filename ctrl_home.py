@@ -25,7 +25,7 @@ def dashboard(): # função que gerencia rota
     #   return redirect(url_for("auth.login"))
     import locale
     #Define a localização para português brasileiro
-    locale.setlocale(locale.LC, 'pt_BR.UTF-8')
+    locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
     
     vendas: list = [
         { "mes":"Janeiro", "total":139519.19},
